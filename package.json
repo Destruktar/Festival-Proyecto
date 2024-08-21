@@ -2,9 +2,11 @@
   "name": "festival-proyecto",
   "version": "1.0.0",
   "description": "Practica HTML SASS JS",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
