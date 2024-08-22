@@ -12,14 +12,14 @@ export function js(done) {
 }
 
 export function css(done) {
-    src('src/scss/app.scss', {sourcemaps: true})
+    src('src/scss/app.scss', { sourcemaps: true })
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('build/css', {sourcemaps: '.'}))
+        .pipe(dest('build/css', { sourcemaps: '.' }))
 
     done()
 }
 
-export function dev (done) {
+export function dev(done) {
     watch('src/scss/**/*.scss', css)
     watch('src/js/**/*.js', js)
 

@@ -1,1 +1,1 @@
-    console.log("Gay")
+console.log("Gay")

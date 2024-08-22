@@ -371,4 +371,18 @@ img {
 
 body > section {
   padding: 10rem 0;
+}
+
+.header {
+  background-color: #4CB8B3;
+}
+.header .contenido-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin: 0;
+  padding: 2rem;
+  color: #FFFFFF;
 }/*# sourceMappingURL=app.css.map */
