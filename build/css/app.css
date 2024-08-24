@@ -480,4 +480,66 @@ body > section {
 .contenido-festival .fecha {
   color: #4CB8B3;
   font-weight: 700;
+}
+
+.line-up {
+  background-color: #F53756;
+}
+.line-up h3,
+.line-up .dia {
+  color: #FFFFFF;
+  text-align: center;
+}
+.line-up .dia {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.escenarios-contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario .nombre-escenario {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.escenario .calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.escenario .calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.escenario .calendario li span {
+  font-weight: 400;
+}
+
+.bg-verde {
+  background-color: #4CB8B3;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: #5ebfbb;
+}
+
+.bg-amarillo {
+  background-color: #fdda00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: #ffdf18;
 }/*# sourceMappingURL=app.css.map */
