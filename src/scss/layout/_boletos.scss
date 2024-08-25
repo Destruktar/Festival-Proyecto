@@ -10,20 +10,22 @@
 
     .boletos {
         @include m.contenedor;
+
         @include m.tablet {
             @include m.grid(2)
-        } 
+        }
     }
 }
 
 
-.pase{
+.pase {
     transition: transform .3s ease-in-out;
 
     &:hover {
         transform: scale(1.1);
     }
-    &-nombre{
+
+    &-nombre {
         font-size: 3.6rem;
         font-weight: 900;
         text-align: center;
@@ -31,10 +33,10 @@
     }
 
     &-header,
-    &-footer{
+    &-footer {
         padding: .5rem;
 
-        p{
+        p {
             text-align: center;
             color: v.$blanco;
             margin: 0;
@@ -43,7 +45,8 @@
 
     &-header {
         background-color: v.$rosa;
-        p{
+
+        p {
             text-transform: uppercase;
             font-size: 2.2rem;
             padding: 1rem 0;
@@ -52,10 +55,11 @@
 
     &-body {
         background-color: v.$blanco;
-        ul{
+
+        ul {
             @include m.resetear-lista;
 
-            li{
+            li {
                 padding: 2rem;
                 border-bottom: 1px solid #e1e1e1;
             }
@@ -65,7 +69,8 @@
     &-footer {
         background-color: v.$blanco;
         padding: 3rem;
-        p{
+
+        p {
             font-size: 2.8rem;
             font-weight: 900;
             background-color: v.$morado;
@@ -73,7 +78,8 @@
             border-radius: 1rem;
             cursor: pointer;
             transition: background-color .2s ease-in-out;
-            &:hover{
+
+            &:hover {
                 background-color: darken(v.$morado, 20);
             }
         }
