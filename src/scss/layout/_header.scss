@@ -4,10 +4,18 @@
 .header {
     background-color: v.$verde;
 
+    @include m.tablet {
+        &.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }
+
     .contenido-header {
         padding: 2rem;
-        text-align: center;
-
         @include m.tablet {
             display: flex;
             justify-content: space-between;
